@@ -31,17 +31,21 @@
    
     <main>
       <!-- Header -->
-      <div class="card" style="width: 50%;">
-        <div class="card-body">
-          <h1 class="card-title">I'm Inoulen </br>Glad to see you!</h1>
-          <p class="card-text">I'm a software developer! I can help you build a product, 
-            feature or website. Look through through some of my work and experience! If you like 
-            what you see and have a project you need coded, don't hesitate to contact me.</p>          
-        </div>
-      </div>
+      <section class="header">
+        <div class="header-container" >
+          <div class="card-body">
+            <h1 class="card-title">I'm Inoulen </br>Glad to see you!</h1>
+            <p class="card-text">I'm a software developer! I can help you build a product, 
+              feature or website. Look through through some of my work and experience! If you like 
+              what you see and have a project you need coded, don't hesitate to contact me.</p>          
+          </div>
+        </div> 
+      </section>
+     
       
       <!-- Works -->
-      <div class="container bcontent">        
+      <section class="card-wrapper"> 
+      <div class="container content">        
         <hr />
         <div class="card" style="width: 80%">
           <div class="row no-gutters">
@@ -60,7 +64,7 @@
       </div>
 
       <!-- card 2 -->
-      <div class="container bcontent">        
+      <div class="container content">        
         <hr />
         <div class="card" style="width: 80%">
           <div class="row no-gutters">
@@ -79,7 +83,7 @@
       </div>
       
       <!-- card 3 -->
-      <div class="container bcontent">        
+      <div class="container content">        
         <hr />
         <div class="card" style="width: 80%">
           <div class="row no-gutters">
@@ -97,7 +101,7 @@
         </div>
       </div>
       <!-- card 4 -->
-      <div class="container bcontent">        
+      <div class="container content">        
         <hr />
         <div class="card" style="width: 80%">
           <div class="row no-gutters">
@@ -116,7 +120,7 @@
       </div>
 
       <!-- About Myself -->
-      <div class="container bcontent">        
+      <div class="container content">        
         <hr />
         <div class="card" style="width: 80%">
           <div class="row no-gutters">
@@ -128,12 +132,91 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <img class="card-img" src="./images/Snapshoot-Portfolio-Art-Print.png" alt="Project4">
+              <ul class="skill-container skills-sizing">
+                <li class="skill-list-header">
+                  <h4 class="skill-header">Languages</h4>
+                  <img src="./images/arrow-down.png" alt="Languages">
+                </li>
+                <ul class="language-list">
+                  <!-- Add img tag within anchor tag for convention -->
+                  <li class="language">
+                    <img src="./images/Ellipse-JS.png" alt="JavaScript">
+                    <h6 class="language-text">JavaScript</h6>
+                  </li>
+                  <li class="language">
+                    <img src="./images/Ellipse-HTML.png" alt="HTML">
+                    <h6 class="language-text">HTML</h6>
+                  </li>
+                  <li class="language">
+                    <img src="./images/Ellipse-CSS.png" alt="CSS">
+                    <h6 class="language-text">CSS</h6>
+                  </li>
+                </ul>          
+                <li class="skill-list-header">
+                  <h4 class="skill-header">Frameworks</h4>
+                  <img src="./images/arrow-button-icon.png" alt="Frameworks">
+                </li>
+                <div class="skill-separator"></div>
+                <li class="skill-list-header">
+                  <h4 class="skill-header">Skills</h4>
+                  <img src="./images/arrow-button-icon.png" alt="Skills">
+                </li>
+                <div class="skill-separator"></div>
+              </ul>
             </div>                
           </div>
         </div>
       </div>
+    </section>
     </main>
+    <!--footer-section-->
+    <footer class="footer-section">
+      <div class="contact-container"> 
+      <div class="contact-info">
+        <h2 class="contact-title">Contact me</h2>
+        <p class="content-text">
+          If you have an application you are interested in developing, a
+          feature that you need built or a project that needs coding. I’d love
+          to help with it
+        </p>
+      </div>
+      <form action="https://formspree.io/f/xpznvyer" method="POST"      class="contact-form"> 
+      <div class="mb-3">
+        <input class="form-control form-control-lg" required
+        id="name"
+        name="user-name"
+        placeholder="Yeremias"
+        minlength="1"
+        maxlength="30"
+        type="text">
+      </div>
+      
+      <div class="mb-3">
+        <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="Email" id="email" placeholder="natajayanj14@gmail.com"
+        type="email" >
+      </div>
+
+      <div class="mb-3">
+        
+        <textarea name="message"
+        id="message"
+        minlength="1"
+        placeholder="Write your message here"
+        maxlength="500"
+        required
+        
+        type="text"
+        cols="30"
+        rows="10" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-sm-6">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+    
+
+    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
